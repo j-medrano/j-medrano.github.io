@@ -1,0 +1,178 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2</title>
+    <style>
+      body{
+        margin: 0px;
+        /* background-color: #282b30; */
+        background-color: white;
+        color: black;
+      }
+      header{
+        align-items:center;
+        display: flex;
+        z-index: 2;
+        justify-content:space-between;
+        height: 10%;
+        
+      }
+      .top{
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+      }
+
+      .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-links{
+        padding: 30px;
+        /* border-right: 1px solid black; */
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-links:hover{
+        background-color: lightgray;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+
+      }
+
+      div a {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .search-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 20%;
+        justify-content: center;
+      }
+      .search-bar:focus{
+        outline-offset: -1px;
+        outline-width: 1px;
+        outline-style: solid;
+        outline-color: blue;
+      }
+
+      .color-link{
+        color: rgb(114, 137, 218);
+      }
+
+      .content-links:hover, .nav-links:hover{
+        text-decoration: underline;
+        cursor:crosshair;
+      }
+
+      .sidebar{
+        width: 20%; 
+        display:flex; 
+        flex-direction: column; 
+        border-left: 1px solid black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- the navigation  -->
+    <header >
+
+      <h1 class="top">
+        CSC 193a
+       </h1>
+       <!-- style="border-left:1px solid black ; -->
+      <div class="links">
+        <a class="nav-links">Home</a>
+        <a class="nav-links"> About Me</a>
+        <a class="nav-links"> Contact</a>
+      </div>
+
+
+
+      <div class="search-box" >
+        <input  class="search-bar" style="border: 1px solid black; padding-top: 2px; padding-bottom: 2px; width: 100%; padding: 10px;" placeholder="Search Assignments or Notes" >
+        <button style="border: 1px solid black; margin-left:0px;  padding: 10px; margin-right: 20px; border-left:0px;">GO</button>
+      </div>
+    </header>
+    <!-- background-color: rgb(54, 57, 63) -->
+    <!-- start of the main page -->
+    <main style=" display: flex; flex-direction: row;  border-top: 1px solid black; ">
+      <article style="width:80%; flex-direction: column;display: flex; overflow-y: auto; align-items: center;">
+
+        <div style="max-height:400px; justify-content: center; align-items: center; display: flex; flex-direction: column;">
+          <h3 style="align-items: center; justify-content:center;">
+            Assignment 2
+          </h3>
+          <div>
+            <p>
+              The <strong>Three-Body</strong> <a class="color-link" href="https://www.mozilla.org/">Problem</a> 
+            </p>
+          </div>
+        </div>
+
+
+
+        <img width="80%" 
+        src="https://cdn.vox-cdn.com/thumbor/-ksxSHEMa8vVs-JUtbcZ1lOJ1IQ=/0x0:3600x1532/1200x800/filters:focal(1517x341:2093x917)/cdn.vox-cdn.com/uploads/chorus_image/image/73224177/3_Body_Problem_n_S1_E4_00_26_53_00RC.jpg_3_Body_Problem_n_S1_E4_00_26_53_00RC.0.jpg"
+        alt="Three-Body Problem" />
+
+        <footer style="display: flex; align-items:center; justify-content:center; color: black;">
+          <p>©Copyright 2050 by nobody. All Rights Reserved.</p>
+        </footer>  
+      </article>
+
+      <!-- the side bar -->
+      <aside class="sidebar">
+        <div style="display: flex; justify-content:center; align-items:center; ">
+          <h1>Related</h1>
+        </div>
+
+        <div>
+          <h3 style="padding-left:12px;">Course Work</h3>
+          <ul >
+            <li class="content-links" >Assignment 2</li>
+            <li class="content-links" >Assignment 3</li>
+            <li class="content-links" >Assignment 4</li>
+          </ul>
+
+          <h3 style="padding-left:12px;">Notes</h3>
+          <ul >
+            <li class="content-links" >Assignment 2</li>
+            <li class="content-links" >Assignment 3</li>
+            <li class="content-links" >Assignment 4</li>
+          </ul>
+
+          <h3 style="padding-left:12px;">Videos</h3>
+          <ul >
+            <li class="content-links" >Assignment 2</li>
+            <li class="content-links" >Assignment 3</li>
+            <li class="content-links" >Assignment 4</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content:center; align-items:center;">
+          <h1>Created By:</h1>
+          <h4>Jonathan Medrano</h4>
+        </div>
+        
+      </aside>
+
+      <!-- <aside style="display:flex; border-left: 1px solid black;">
+        <div>
+          <h1>Related</h1>
+        </div>
+      </aside> -->
+    </main>
+  </body>
+</html>
