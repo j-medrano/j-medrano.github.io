@@ -83,8 +83,8 @@ const checkSectionVisibility = () => {
                 <a 
                   onClick={() => scrollToSection(aboutRef)}
                   className={`group flex flex-row items-center text-[#64748b] pb-6 pt-12 hover:scale-105 transition-all duration-200 ${isAboutHovered ? "text-[#e5e7eb]" : "hover:text-[#e5e7eb]"}`}>
-                  <div className={`w-8 border border-[#64748b] transition-all duration-150 group-hover:w-20 group-hover:border-white ${isAboutHovered ? "text-[#e5e7eb] w-20 border-white" : "hover:text-[#e5e7eb]"}`}></div>
-                  <p className={`pl-4 font-semibold text-sm tracking-wide transition-all duration-150 group-hover:text-[1.25rem]  ${isAboutHovered ? "text-[1.25rem]" : "hover:text-[#e5e7eb]"}`}>
+                  <div className={`border border-[#64748b] transition-all duration-150 group-hover:w-20 group-hover:border-white ${isAboutHovered ? "text-[#e5e7eb] w-20 border-white" : " w-8 hover:text-[#e5e7eb]"}`}></div>
+                  <p className={`pl-4 font-semibold tracking-wide transition-all duration-150 group-hover:text-[1.25rem]  ${isAboutHovered ? "text-[1.25rem]" : "text-sm hover:text-[#e5e7eb]"}`}>
                     ABOUT
                   </p>
                 </a>
@@ -94,10 +94,10 @@ const checkSectionVisibility = () => {
                 <a 
                   onClick={() => scrollToSection(experienceRef)}
                   className={`group flex flex-row items-center text-[#64748b] pb-6 hover:scale-105 transition-all duration-200 ${isExperienceHovered ? "text-[#e5e7eb]" : "hover:text-[#e5e7eb]"}`}>
-                  <div className={`w-8 border border-[#64748b] transition-all duration-150 group-hover:w-20 group-hover:border-white ${isExperienceHovered ? "text-[#e5e7eb] w-20 border-white" : "hover:text-[#e5e7eb]"}`}>
+                  <div className={`border border-[#64748b] transition-all duration-150 group-hover:w-20 group-hover:border-white ${isExperienceHovered ? "text-[#e5e7eb] w-20 border-white" : "w-8 hover:text-[#e5e7eb]"}`}>
 
                   </div>
-                  <p className={`pl-4 font-semibold text-sm tracking-wide transition-all duration-150 group-hover:text-[1.25rem] ${isExperienceHovered ? "text-[1.25rem]" : "hover:text-[#e5e7eb]"}`}>
+                  <p className={`pl-4 font-semibold tracking-wide transition-all duration-150 group-hover:text-[1.25rem] ${isExperienceHovered ? "text-[1.25rem]" : "hover:text-[#e5e7eb] text-sm"}`}>
                     EXPERIENCE
                   </p>
                 </a>
@@ -157,13 +157,15 @@ const checkSectionVisibility = () => {
           <div className="flex flex-col  ">
 
               <div className="flex flex-col sm:flex-col lg:flex-row group cursor-pointer px-8 py-8 lg:hover:bg-[#1f2937]/60 transition-all duration-300 rounded-md">
-                <div className="lg:w-1/4 mb-2 lg:mb-0 lg:pr-20 whitespace-nowrap text-[#64748b] font-medium text-sm">Jan - Dec 2024</div>
+                <div className="lg:w-1/4  lg:pr-20 whitespace-nowrap text-[#64748b] font-medium text-sm pt-1">Jan - Dec 2024</div>
                 <div className="flex flex-col lg:w-3/4">
                   <div className="lg:group-hover:text-[#5eead4] transition-all duration-300 hover:text-[#5eead4] text-[#e2e8f0] font-medium text-lg">
                     Full Stack Developer • The Lamby Shop
                   </div>
-                  <div>Senior Project</div>
-                  <div>
+                  <div className="text-[#64748b] mb-2">
+                    Senior Project
+                  </div>
+                  <div className="text-[#94a3b8]">
                     Worked collaboratively with a team of students to develop an innovative e-commerce platform tailored to a client's needs. 
                     The project focused on creating a user-friendly shopping experience to help our client showcase and sell her handmade crochet pieces, 
                     demonstrating both technical expertise and teamwork.                  
@@ -196,38 +198,38 @@ const checkSectionVisibility = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-col lg:flex-row  cursor-pointer pl-8">
-                <div className="lg:w-1/4 mb-2 lg:mb-0 lg:pr-20 whitespace-nowrap text-[#64748b]">Jan - Dec 2024</div>
+              <div className="flex flex-col sm:flex-col lg:flex-row group cursor-pointer px-8 py-8 lg:hover:bg-[#1f2937]/60 transition-all duration-300 rounded-md">
+                <div className="lg:w-1/4  lg:pr-20 whitespace-nowrap text-[#64748b] font-medium text-sm pt-1">Aug - Dec 2022</div>
                 <div className="flex flex-col lg:w-3/4">
-                  <div>Full Stack Developer • The Lamby Shop</div>
-                  <div>Senior Project</div>
-                  <div>
-                    Worked collaboratively with a team of students to develop an innovative e-commerce platform tailored to a client's needs. 
-                    The project focused on creating a user-friendly shopping experience to help our client showcase and sell her handmade crochet pieces, 
-                    demonstrating both technical expertise and teamwork.                  
+                  <div className="lg:group-hover:text-[#5eead4] transition-all duration-300 hover:text-[#5eead4] text-[#e2e8f0] font-medium text-lg mb-2">
+                    Developer • Call Center Visualization Project
+                  </div>
+                  <div className="text-[#94a3b8]">
+                  Worked collaboratively with a team of students to develop a high-performance, 
+                  real-time visual web application for a call center. 
+                  The project delivered dynamic reports for management to monitor employee performance, 
+                  showcasing both technical expertise and effective teamwork.                 
                   </div>
                   <div className="mt-4 cursor-pointer">
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit ">
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
                       JavaScript
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mx-4 my-2">
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
                       Node.js
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mx-4 my-2">
-                      Stripe
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
+                      Express.js
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mx-4 my-2">
-                      Tailwind CSS
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
+                      HTML
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mx-4 my-2">
-                      AWS Amplify
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
+                      MongoDB
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mx-4 my-2">
-                      React
+                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit mr-4 my-2">
+                      Mongoose
                     </p>
-                    <p className=" border border-[#5eead4]/20 px-2 rounded-full bg-[#5eead4]/20 text-[#5eead4] inline-block w-fit">
-                      DynamoDB
-                    </p>
+
                   </div>
  
 

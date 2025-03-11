@@ -59,7 +59,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .header-component {
       position: fixed; /* Fix only for larger screens */
       flex-direction: row;
